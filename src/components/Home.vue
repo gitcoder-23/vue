@@ -4,7 +4,7 @@
   <!---Header--->
   <Header />
 <!---banner---->
-<Banner />
+  <Banner />
 
 
 <main id="main">
