@@ -7,8 +7,9 @@
         <h3>Testimonials</h3>
       </header>
 
-      <div class="owl-carousel testimonials-carousel">
+      <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true }'>
 
+        <div class="carousel-cell">
         <div class="testimonial-item">
           <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
           <h3>Saul Goodman</h3>
@@ -18,8 +19,9 @@
             Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
             <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
           </p>
-        </div>
+        </div></div>
 
+        <div class="carousel-cell">
         <div class="testimonial-item">
           <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
           <h3>Sara Wilsson</h3>
@@ -29,8 +31,9 @@
             Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
             <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
           </p>
-        </div>
+        </div></div>
 
+        <div class="carousel-cell">
         <div class="testimonial-item">
           <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
           <h3>Jena Karlis</h3>
@@ -40,8 +43,9 @@
             Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
             <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
           </p>
-        </div>
+        </div></div>
 
+        <div class="carousel-cell">
         <div class="testimonial-item">
           <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
           <h3>Matt Brandon</h3>
@@ -51,8 +55,9 @@
             Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
             <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
           </p>
-        </div>
+        </div></div>
 
+        <div class="carousel-cell">
         <div class="testimonial-item">
           <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
           <h3>John Larson</h3>
@@ -62,7 +67,7 @@
             Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
             <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
           </p>
-        </div>
+        </div></div>
 
       </div>
 
@@ -81,5 +86,21 @@ export default {
 </script>
 
 <style scoped>
+.carousel-cell {
+  width: 100%;
+  height: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  /* counter-increment: gallery-cell; */
+}
 
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  /* color: white; */
+}
 </style>

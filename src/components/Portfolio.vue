@@ -15,6 +15,7 @@
             <li data-filter=".filter-card">Card</li>
             <li data-filter=".filter-web">Web</li>
           </ul>
+
         </div>
       </div>
 
@@ -165,10 +166,10 @@
 <script>
 export default {
     name: 'Portfolio',
-    components: {
-
-    }
+    
 }
+
+
 </script>
 
 <style scoped>
